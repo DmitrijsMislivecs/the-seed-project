@@ -20,6 +20,6 @@ public class RegistrationController {
         model.addAttribute("Name", user.getName());
         model.addAttribute("Surname", user.getSurname());
 
-        return "successRegistration.html";
+        return "successRegistration";
     }
 }
