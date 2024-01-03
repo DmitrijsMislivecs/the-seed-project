@@ -10,7 +10,7 @@ public class CityServices {
     @Autowired
     private CityDAO cityDAO;
 
-    public void StoreNewCity(City city) {
-        cityDAO.StoreNewCity(city);
+    public void storeNewCity(City city) {
+        cityDAO.storeNewCity(city);
     }
 }
