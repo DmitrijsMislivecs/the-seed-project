@@ -10,7 +10,7 @@ public class CityDAO {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public void StoreNewCity(City city) {
+    public void storeNewCity(City city) {
         jdbcTemplate.update("INSERT INTO cities (city) VALUES (?)", city.getCityName());
     }
 }
