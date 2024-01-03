@@ -10,7 +10,7 @@ public class CategoryServices {
     @Autowired
     private CategoryDAO categoryDAO;
 
-    public void StoreNewCategory(Category category) {
+    public void storeNewCategory(Category category) {
         categoryDAO.storeNewCategory(category);
     }
 }
