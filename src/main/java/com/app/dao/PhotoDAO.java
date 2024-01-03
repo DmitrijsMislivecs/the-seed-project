@@ -10,7 +10,7 @@ public class PhotoDAO {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public void StoreNewPhoto(Photo photo) {
+    public void storeNewPhoto(Photo photo) {
         jdbcTemplate.update("INSERT INTO photos (ad_id, url) VALUES (?,?)", photo.getAdvertisementId(), photo.getPhotoUrl());
     }
 }
