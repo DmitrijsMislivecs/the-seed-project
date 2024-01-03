@@ -10,7 +10,7 @@ public class SortDAO {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public void StoreNewSort(Sort sort) {
+    public void storeNewSort(Sort sort) {
         jdbcTemplate.update("INSERT INTO sort (name) VALUES (?)", sort.getName());
     }
 }
