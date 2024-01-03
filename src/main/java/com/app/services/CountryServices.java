@@ -10,7 +10,7 @@ public class CountryServices {
     @Autowired
     private CountryDAO countryDAO;
 
-    public void StoreNewCountry(Country country) {
-        countryDAO.StoreNewCountry(country);
+    public void storeNewCountry(Country country) {
+        countryDAO.storeNewCountry(country);
     }
 }
