@@ -10,7 +10,7 @@ public class SortServices {
     @Autowired
     private SortDAO sortDAO;
 
-    public void StoreNewSort(Sort sort) {
-        sortDAO.StoreNewSort(sort);
+    public void storeNewSort(Sort sort) {
+        sortDAO.storeNewSort(sort);
     }
 }
