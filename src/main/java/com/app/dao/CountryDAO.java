@@ -10,7 +10,7 @@ public class CountryDAO {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public void StoreNewCountry(Country country) {
+    public void storeNewCountry(Country country) {
         jdbcTemplate.update("INSERT INTO countries(country) VALUES (?)", country.getCountry());
     }
 }
